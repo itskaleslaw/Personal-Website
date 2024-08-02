@@ -1,0 +1,86 @@
+* {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 25px;
+  scroll-snap-type: y mandatory;
+}
+h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 85px;
+  text-align: center;
+  margin: 0;
+  color: beige;
+}
+body {
+  background-color:rgb(33, 13, 122);
+  background-size: cover;
+}
+.textBlock {
+  text-align: center;
+  margin-top: 0;
+  color: beige;
+  letter-spacing: 3px;
+}
+.class {
+  font-size: 1.2em;
+}
+.manilaBlock {
+  background-image: url(../images/manila\ long\ text\ block.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+a, a:visited, a:active, a:focus {
+  color: beige;
+  display: inline-block;
+  margin: 2vh;
+  padding: 0;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+a:hover {
+  color: rgb(255, 194, 124);
+}
+.manilaBlockTwo {
+  background-image: url(../images/manila\ square\ block.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.blockWithinBlock {
+  position: relative;
+  top: 15%;
+  left: 5%;
+}
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+canvas {
+  display: block;
+}
+.projectBar {
+  background-color: red;
+  margin-bottom: 5vh;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #f9f9d7;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#4d1fcd, #ff6fee);
+  border-radius: 8px;
+}
+/* .linkedIn {
+  position: absolute;
+  top:0;
+  left:0;
+} */
