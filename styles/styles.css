@@ -65,8 +65,17 @@ canvas {
   display: block;
 }
 .projectBar {
-  background-color: red;
+  background-color: rgb(252, 196, 196);
   margin-bottom: 5vh;
+  display: flex;
+  overflow-x: auto;
+}
+.projectBox {
+  height: 200px;
+  text-align: center;
+  background-color: rgb(70, 38, 146);
+  min-width: 225px;
+  margin: 15px;
 }
 /* custom scrollbar */
 ::-webkit-scrollbar {
@@ -79,8 +88,3 @@ canvas {
   background: linear-gradient(#4d1fcd, #ff6fee);
   border-radius: 8px;
 }
-/* .linkedIn {
-  position: absolute;
-  top:0;
-  left:0;
-} */
