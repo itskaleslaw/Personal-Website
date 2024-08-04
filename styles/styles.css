@@ -38,6 +38,11 @@ h1 {
   letter-spacing: 3px;
   text-shadow:3px 3px 10px rgb(20, 8, 73);
 }
+.projectBar div {
+  text-align: center;
+  margin-top: 0;
+  color: beige;
+}
 .class {
   font-size: 1.2em;
 }
@@ -77,6 +82,7 @@ a:hover {
   top: 15%;
   left: 5%;
 }
+/* page three */
 .section {
   /* scroll-snap-align: start; */
   height: 100vh;
@@ -85,32 +91,41 @@ a:hover {
   justify-content: center;
   align-items: center; 
 }
-canvas {
-  display: block;
-}
 .projectBar {
-  background-color: rgb(252, 196, 196);
+  /* background-color: rgb(252, 196, 196); */
   margin-bottom: 5vh;
   display: flex;
   overflow-x: scroll;
 }
 .gallery {
-  background-color: rgb(252, 196, 196);
+  /* background-color: rgb(252, 196, 196); */
   margin-bottom: 5vh;
   display: flex;
   overflow-x: scroll;
 }
-.projectBox {
+.gallery img {
+  transition: transform 0.5s;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+.projectBar div {
   height: 220px;
   text-align: center;
-  background-color: rgb(70, 38, 146);
+  background-color: rgb(145, 159, 218);
   min-width: 300px;
   margin: 15px;
+  transition: transform 0.5s;
+  border-radius: 5px;
 }
-.arrow {
+.projectBar div:hover {
+  transform: scale(1.1);
+}
+#nextArrow1, #nextArrow2 {
   display: inline;
   position: absolute;
   transform: translate(61vw, 100px);
+  cursor: pointer;
 }
 .gallery img {
   padding: 15px;
