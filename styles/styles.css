@@ -3,22 +3,36 @@
   font-size: 25px;
   scroll-snap-type: y mandatory;
 }
+.artCredits {
+  position: sticky;
+  z-index: 1000;
+  color: beige;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+/* first page */
+.art {
+  max-width: 100%;
+  max-height: 400%;
+  background-repeat: no-repeat;
+  background-image: url(../images/background\ test.png);
+  background-size: cover;
+}
 h1 {
   font-family: "Archivo", sans-serif;
   font-size: 85px;
   text-align: center;
   margin: 0;
   color: beige;
-}
-body {
-  background-color:rgb(33, 13, 122);
-  background-size: cover;
+  text-shadow:3px 3px 10px rgb(20, 8, 73);
 }
 .textBlock {
   text-align: center;
   margin-top: 0;
   color: beige;
   letter-spacing: 3px;
+  text-shadow:3px 3px 10px rgb(20, 8, 73);
 }
 .class {
   font-size: 1.2em;
@@ -29,11 +43,16 @@ body {
   background-repeat: no-repeat;
   align-items: center;
 }
+.links {
+  margin-top: 20px;
+  display: flex;
+  text-shadow:3px 3px 10px rgb(20, 8, 73);
+}
 a, a:visited, a:active, a:focus {
   color: beige;
   display: inline-block;
-  margin: 2vh;
-  padding: 0;
+  margin-left: 15px;
+  margin-right: 15px;
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
   text-decoration-style: dotted;
@@ -42,6 +61,7 @@ a, a:visited, a:active, a:focus {
 a:hover {
   color: rgb(255, 194, 124);
 }
+/* page two */
 .manilaBlockTwo {
   background-image: url(../images/manila\ square\ block.png);
   background-size: cover;
@@ -68,14 +88,28 @@ canvas {
   background-color: rgb(252, 196, 196);
   margin-bottom: 5vh;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
+}
+.gallery {
+  background-color: rgb(252, 196, 196);
+  margin-bottom: 5vh;
+  display: flex;
+  overflow-x: scroll;
 }
 .projectBox {
-  height: 200px;
+  height: 220px;
   text-align: center;
   background-color: rgb(70, 38, 146);
-  min-width: 225px;
+  min-width: 300px;
   margin: 15px;
+}
+.arrow {
+  display: inline;
+  position: absolute;
+  transform: translate(61vw, 100px);
+}
+.gallery img {
+  padding: 15px;
 }
 /* custom scrollbar */
 ::-webkit-scrollbar {
@@ -87,4 +121,8 @@ canvas {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(#4d1fcd, #ff6fee);
   border-radius: 8px;
+}
+/* scrollbar hide */
+.gallery::-webkit-scrollbar, .projectBar::-webkit-scrollbar {
+  display: none;
 }
