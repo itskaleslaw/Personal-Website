@@ -9,7 +9,7 @@ body {
 }
 .artCredits {
   position: sticky;
-  z-index: 1000;
+  z-index: 10;
   color: beige;
   top: 0;
   left: 0;
@@ -37,11 +37,6 @@ h1 {
   color: beige;
   letter-spacing: 3px;
   text-shadow:3px 3px 10px rgb(20, 8, 73);
-}
-.projectBar div {
-  text-align: center;
-  margin-top: 0;
-  color: beige;
 }
 .class {
   font-size: 1.2em;
@@ -85,7 +80,7 @@ a:hover {
 /* page three */
 .section {
   /* scroll-snap-align: start; */
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,29 +97,86 @@ a:hover {
   margin-bottom: 5vh;
   display: flex;
   overflow-x: scroll;
+  cursor: pointer;
 }
 .gallery img {
   transition: transform 0.5s;
+  cursor: pointer;
 }
 .gallery img:hover {
   transform: scale(1.1);
 }
+.popup-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0, 0, 0, .9);
+  z-index: 100;
+  cursor: pointer;
+  /* display: none; */
+}
+.popup-container div {
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+}
+#popup {
+  margin-left: auto;
+  margin-right: auto;
+}
+#xButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 70px;
+  font-weight: bolder;
+  color:rgb(255, 194, 124);
+  cursor: pointer;
+}
+.projectBar div a, .projectBar div a:visited {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: rgb(20, 8, 73);
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  font-size: 32px;
+}
+.projectBar div p {
+  padding: 10px;
+  margin: 0;
+  color: rgb(20, 8, 73);
+  font-size: 23px;
+}
 .projectBar div {
   height: 220px;
   text-align: center;
-  background-color: rgb(145, 159, 218);
-  min-width: 300px;
+  background-image: url(../images/manila\ square\ project\ block.png);
+  background-size: cover;
+  min-width: 285px;
   margin: 15px;
   transition: transform 0.5s;
   border-radius: 5px;
 }
-.projectBar div:hover {
+/* .projectBar div:hover {
   transform: scale(1.1);
-}
+} */
 #nextArrow1, #nextArrow2 {
   display: inline;
   position: absolute;
   transform: translate(61vw, 100px);
+  cursor: pointer;
+}
+#backArrow1, #backArrow2 {
+  display: inline;
+  position: absolute;
+  transform: translate(-4vw, 100px);
   cursor: pointer;
 }
 .gallery img {
