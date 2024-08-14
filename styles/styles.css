@@ -104,7 +104,7 @@ a:hover {
   cursor: pointer;
 }
 .gallery img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .popup-container {
   width: 100%;
@@ -118,7 +118,7 @@ a:hover {
   background-color:rgba(0, 0, 0, .9);
   z-index: 100;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
 .popup-container div {
   width: 70vw;
@@ -152,7 +152,7 @@ a:hover {
   padding: 10px;
   margin: 0;
   color: rgb(20, 8, 73);
-  font-size: 23px;
+  font-size: 20px;
 }
 .projectBar div {
   height: 220px;
@@ -164,9 +164,9 @@ a:hover {
   transition: transform 0.5s;
   border-radius: 5px;
 }
-/* .projectBar div:hover {
-  transform: scale(1.1);
-} */
+.projectBar div:hover {
+  transform: scale(1.05);
+}
 #nextArrow1, #nextArrow2 {
   display: inline;
   position: absolute;
