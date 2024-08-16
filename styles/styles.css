@@ -118,7 +118,7 @@ a:hover {
   background-color:rgba(0, 0, 0, .9);
   z-index: 100;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
 .popup-container div {
   width: 70vw;
