@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link href="styles/styles.css" rel="stylesheet" />
     <script src="libraries/p5.js"></script>
+    <script src="sketch.js"></script>
     <title>Vivian Gu Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +15,14 @@
   </head>
   <body>
     <section class="art">
-        <section class="section">
+        <section class="section" id="page1">
           <!-- <a href="https://www.linkedin.com/in/vivian-gu-954189253/" class="linkedIn">LinkedIn</a> -->
           <header class="header">
             <h1>Hello!</h1>
             <p class="textBlock"> I'm <strong class="bold">Vivian Gu</strong> </p>
           </header>
           <div class="manilaBlock"; style="height:102px; width:500px;">
-            <div class="blockWithinBlock"> Sophomore @ Georgia Tech <br> Computational Media Major, GPA: 3.93 </div>
+              <div id="manilaBlockDiv">Sophomore @ Georgia Tech</div> <div>Computational Media Major</div>
           </div>
           <div>
             <div class="links">
@@ -57,10 +58,13 @@
           <img src="images/backarrow.gif" id="backArrow1">
           <div class="projectBar" style="height:250px">
             <div>
-              <a href="https://github.com/vividlyyyy/Personal-Website" target="_blank" rel="noopener noreferrer">Website</a>
-              <p>Personal portfolio website built with HTML, CSS, and snowfall.js ?</p>
+              <a href="https://github.com/vividlyyyy/Personal-Website" target="_blank" rel="noopener noreferrer">Personal Website</a>
+              <p>Personal portfolio website built with HTML, CSS, and p5.js. Displays generation of stars, snow, and includes background parallax for effective visuals.</p>
             </div>
-            <div>Box2</div>
+            <div>
+              <a href="https://github.gatech.edu/bhanna30/group-4-restaurant-reservation-system" target="_blank" rel="noopener noreferrer">Reservation System</a>
+              <p>Restaurant reservation system with UI, created with Java, Pebble, and Bootstrap. Allows for registering entities and creating reservations.</p>
+            </div>
             <div>Box3</div>
             <div>Box4</div>
             <div>Box5</div>
@@ -96,7 +100,7 @@
         <div class="manilaBlockTwo"; style="height:355px; width:505px;">
           <p style="padding-left: 20px; margin-bottom: 10px; margin-top: 30px">I enjoy doing many things, including:</p>
           <ul style="margin-top: 0; margin-bottom: 10px">
-            <li><strong>Gaming</strong> - League of Legends, TFT, Stardew Valley, Geoguessr</li>
+            <li><strong>Gaming</strong> - League of Legends, TFT, Celeste, Stardew Valley</li>
             <li><strong>Watching shows</strong> - Jojo's bizarre adventure (part 4 is the best :P)</li>
             <li><strong>Anything music related</strong> - Piano, singing</li>
             <li><strong>Anything creative</strong> - Dance, crochet, traditional art</li>

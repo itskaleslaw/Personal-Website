@@ -36,7 +36,7 @@ h1 {
   margin-top: 0;
   color: beige;
   letter-spacing: 3px;
-  text-shadow:3px 3px 10px rgb(20, 8, 73);
+  text-shadow:5px 5px 10px rgb(20, 8, 73);
 }
 .class {
   font-size: 1.2em;
@@ -45,7 +45,10 @@ h1 {
   background-image: url(../images/manila\ long\ text\ block.png);
   background-size: cover;
   background-repeat: no-repeat;
-  align-items: center;
+  text-align: center;
+}
+#manilaBlockDiv {
+  padding-top: 17px;
 }
 .links {
   margin-top: 20px;
@@ -71,11 +74,6 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
-}
-.blockWithinBlock {
-  position: relative;
-  top: 15%;
-  left: 5%;
 }
 /* page three */
 .section {
@@ -146,20 +144,20 @@ a:hover {
   text-decoration-style: dotted;
   text-underline-offset: 3px;
   text-decoration-thickness: 2px;
-  font-size: 32px;
+  font-size: 25px;
 }
 .projectBar div p {
-  padding: 10px;
+  padding: 4px;
   margin: 0;
   color: rgb(20, 8, 73);
-  font-size: 23px;
+  font-size: 19px;
 }
 .projectBar div {
   height: 220px;
   text-align: center;
   background-image: url(../images/manila\ square\ project\ block.png);
   background-size: cover;
-  min-width: 285px;
+  min-width: 290px;
   margin: 15px;
   transition: transform 0.5s;
   border-radius: 5px;
@@ -170,13 +168,13 @@ a:hover {
 #nextArrow1, #nextArrow2 {
   display: inline;
   position: absolute;
-  transform: translate(61vw, 100px);
+  transform: translate(62vw, 100px);
   cursor: pointer;
 }
 #backArrow1, #backArrow2 {
   display: inline;
   position: absolute;
-  transform: translate(-4vw, 100px);
+  transform: translate(-7vw, 100px);
   cursor: pointer;
 }
 .gallery img {
