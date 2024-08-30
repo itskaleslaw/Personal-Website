@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 400%;
   background-repeat: no-repeat;
-  background-image: url(../images/background\ test.png);
+  background-image: url(../images/background.png);
   background-size: cover;
 }
 h1 {
@@ -74,6 +74,8 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
+  height: 400px;
+  width: 570px;
 }
 /* page three */
 .section {
@@ -88,13 +90,13 @@ a:hover {
   /* background-color: rgb(252, 196, 196); */
   margin-bottom: 5vh;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .gallery {
   /* background-color: rgb(252, 196, 196); */
   margin-bottom: 5vh;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
   cursor: pointer;
 }
 .gallery img {
@@ -180,6 +182,15 @@ a:hover {
 .gallery img {
   padding: 15px;
 }
+/* page four */
+.manilaBlockThree {
+  background-image: url(../images/manila\ square\ block.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 355px;
+  width: 505px;
+}
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
@@ -194,4 +205,26 @@ a:hover {
 /* scrollbar hide */
 .gallery::-webkit-scrollbar, .projectBar::-webkit-scrollbar {
   display: none;
+}
+/* media query */
+@media (max-width: 900px) {
+  .manilaBlockTwo {
+    height: 322px;
+    width: 458px;
+  }
+  .manilaBlockTwo p, .manilaBlockTwo ul li{
+    font-size: 20px;
+  }
+  .projectBar div p {
+    font-size: 17px;
+    padding: 20px;
+    padding-top: 10px;
+  }
+  .manilaBlockThree {
+    height: 305px;
+    width: 434px;
+  }
+  .manilaBlockThree p, .manilaBlockThree ul, .manilaBlockThree li {
+    font-size: 20px;
+  }
 }
