@@ -3,6 +3,10 @@
   font-size: 25px;
   scroll-snap-type: y mandatory;
 }
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
 body {
   margin: 0;
   padding: 0;
@@ -304,7 +308,7 @@ a:hover {
   }
   .projectBar div {
     min-width: 0;
-    max-width: 184px;
+    max-width: 193px;
     max-height: 148px;
   }
   .projectBar div a {
@@ -356,14 +360,16 @@ a:hover {
     margin-top: 4px;
   }
   .manilaBlockThree {
-    height: 239px;
-    width: 339px;
+    height: 219px;
+    width: 312px;
   }
   .manilaBlockThree p {
-    font-size: 17px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0px;
   }
   * {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
