@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="styles/styles.css" rel="stylesheet" />
     <script src="libraries/p5.js"></script>
     <script src="sketch.js"></script>
@@ -17,12 +18,11 @@
   <body>
     <section class="art">
         <section class="section" id="page1">
-          <!-- <a href="https://www.linkedin.com/in/vivian-gu-954189253/" class="linkedIn">LinkedIn</a> -->
           <header class="header">
             <h1>Hello!</h1>
             <p class="textBlock"> I'm <strong class="bold">Vivian Gu</strong> </p>
           </header>
-          <div class="manilaBlock"; style="height:102px; width:500px;">
+          <div class="manilaBlock">
               <div id="manilaBlockDiv">Sophomore @ Georgia Tech</div> <div>Computational Media Major</div>
           </div>
           <div>
@@ -54,26 +54,34 @@
           </div>
         </div>
         <p class="textBlock">Here are some of my <strong class="bold">PROJECTS</strong>:</p>
-        <div style="max-width: 60%">
+        <div class="bar">
           <img src="images/arrow.gif" id="nextArrow1">
           <img src="images/backarrow.gif" id="backArrow1">
           <div class="projectBar" style="height:250px">
             <div>
               <a href="https://github.com/vividlyyyy/Personal-Website" target="_blank" rel="noopener noreferrer">Personal Website</a>
-              <p>Personal portfolio website built with HTML, CSS, and p5.js. Displays generation of stars, snow, and includes background parallax for effective visuals.</p>
+              <p>Personal portfolio website built with HTML, CSS, and p5.js. Displays generation of stars, snow, and includes self-made background art for an engaging visual experience.</p>
             </div>
             <div>
-              <a href="https://github.gatech.edu/bhanna30/group-4-restaurant-reservation-system" target="_blank" rel="noopener noreferrer">Reservation System</a>
+              <a href="https://github.com/itskaleslaw/Restaurant-Reservation-System" target="_blank" rel="noopener noreferrer">Reservation System</a>
               <p>Restaurant reservation system with UI, created with Java, Pebble, and Bootstrap. Allows for registering entities and creating reservations.</p>
             </div>
             <div>
               <a>VGDev</a>
-              <p>Contributed to pixel assets and code for our school's video game development club.</p>
+              <p>Contributed to pixel assets, 3D assets, and code for our school's video game development club. Worked with Unity, Blender, and Aseprite for multiple projects.</p>
+            </div>
+            <div>
+              <a>Byte My Heart</a>
+              <p>Game coded in C for Gameboy Advanced emulator. Includes GBA optimization to avoid screen tearing, multiple dialogue paths, 2D movement, and custom art.</p>
+            </div>
+            <div>
+              <a href="https://github.com/itskaleslaw/CS3451-Assignments" target="_blank" rel="noopener noreferrer">Computer Graphics</a>
+              <p>Ongoing projects for my CS3451 class, working with GLSL, OpenGL, and C++. Covers topics such as ray tracing, GPU programming, mesh, texture, etc.</p>
             </div>
           </div>
         </div>
         <p class="textBlock">Here is some of my <strong class="bold">ART</strong>:</p>
-        <div style="max-width: 60%">
+        <div class="bar">
           <img src="images/arrow.gif" id="nextArrow2">
           <img src="images/backarrow.gif" id="backArrow2">
           <div class="gallery" style="height:250px">

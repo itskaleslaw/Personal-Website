@@ -4,28 +4,28 @@ let scrollContainer2 = document.querySelector(".gallery");
 
 nextArrow1.addEventListener("click", () => {
     scrollContainer1.scrollTo({
-        left: scrollContainer1.scrollLeft + 550,
+        left: scrollContainer1.scrollLeft + 300,
         behavior: "smooth"
     });
 });
 
 backArrow1.addEventListener("click", () => {
     scrollContainer1.scrollTo({
-        left: scrollContainer1.scrollLeft - 550,
+        left: scrollContainer1.scrollLeft - 300,
         behavior: "smooth"
     });
 });
 
 nextArrow2.addEventListener("click", () => {
     scrollContainer2.scrollTo({
-        left: scrollContainer2.scrollLeft + 500,
+        left: scrollContainer2.scrollLeft + 300,
         behavior: "smooth"
     });
 });
 
 backArrow2.addEventListener("click", () => {
     scrollContainer2.scrollTo({
-        left: scrollContainer2.scrollLeft - 500,
+        left: scrollContainer2.scrollLeft - 300,
         behavior: "smooth"
     });
 });

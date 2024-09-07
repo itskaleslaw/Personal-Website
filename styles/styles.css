@@ -42,6 +42,8 @@ h1 {
   font-size: 1.2em;
 }
 .manilaBlock {
+  height:102px;
+  width:500px;
   background-image: url(../images/manila\ long\ text\ block.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,6 +90,7 @@ a:hover {
 }
 .projectBar {
   /* background-color: rgb(252, 196, 196); */
+  max-width: 60vw;
   margin-bottom: 5vh;
   display: flex;
   overflow-x: hidden;
@@ -107,8 +110,8 @@ a:hover {
   transform: scale(1.1);
 }
 .popup-container {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   position: fixed;
@@ -124,10 +127,14 @@ a:hover {
   width: 70vw;
   height: 70vh;
   display: flex;
+  justify-content: center;
 }
 #popup {
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 #xButton {
   position: absolute;
@@ -137,6 +144,9 @@ a:hover {
   font-weight: bolder;
   color:rgb(255, 194, 124);
   cursor: pointer;
+}
+.bar {
+  max-width: 60%;
 }
 .projectBar div a, .projectBar div a:visited {
   margin-top: 20px;
@@ -163,6 +173,9 @@ a:hover {
   margin: 15px;
   transition: transform 0.5s;
   border-radius: 5px;
+}
+.projectBar div a:hover {
+  color: rgb(255, 194, 124);
 }
 /* .projectBar div:hover {
   transform: scale(1.1);
@@ -207,7 +220,14 @@ a:hover {
   display: none;
 }
 /* media query */
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-height: 800px) {
+  .manilaBlock {
+    height:81px;
+    width: 400px;
+  }
+  .manilaBlock div {
+    font-size: 20px;
+  }
   .manilaBlockTwo {
     height: 322px;
     width: 458px;
@@ -226,5 +246,23 @@ a:hover {
   }
   .manilaBlockThree p, .manilaBlockThree ul, .manilaBlockThree li {
     font-size: 20px;
+  }
+  #backArrow1, #backArrow2 {
+    transform: translate(-13vw, 100px);
+  }
+  #nextArrow1, #nextArrow2 {
+    transform: translate(62vw, 100px);
+  }
+}
+
+@media (width >= 2145px) {
+  .bar {
+    max-width: 50%;
+  }
+  #backArrow1, #backArrow2 {
+    transform: translate(-5vw, 100px);
+  }
+  #nextArrow1, #nextArrow2 {
+    transform: translate(52vw, 100px);
   }
 }
