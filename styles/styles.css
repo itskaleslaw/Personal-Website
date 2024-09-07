@@ -23,11 +23,12 @@ body {
   background-image: url(../images/background.png);
   background-size: cover;
 }
-h1 {
-  font-family: "Archivo", sans-serif;
-  font-size: 85px;
+.hello {
+  font-family: "Jersey 15";
+  font-size: 90px;
   text-align: center;
   margin: 0;
+  letter-spacing: 10px;
   color: beige;
   text-shadow:3px 3px 10px rgb(20, 8, 73);
 }
@@ -79,6 +80,9 @@ a:hover {
   height: 400px;
   width: 570px;
 }
+.manilaBlockTwo p {
+  padding-left: 20px; margin-bottom: 10px; margin-top: 30px;
+}
 /* page three */
 .section {
   /* scroll-snap-align: start; */
@@ -90,6 +94,7 @@ a:hover {
 }
 .projectBar {
   /* background-color: rgb(252, 196, 196); */
+  height: 250px;
   max-width: 60vw;
   margin-bottom: 5vh;
   display: flex;
@@ -169,7 +174,7 @@ a:hover {
   text-align: center;
   background-image: url(../images/manila\ square\ project\ block.png);
   background-size: cover;
-  min-width: 290px;
+  min-width: 288px;
   margin: 15px;
   transition: transform 0.5s;
   border-radius: 5px;
@@ -204,6 +209,9 @@ a:hover {
   height: 355px;
   width: 505px;
 }
+.manilaBlockThree p {
+  padding-left: 20px; margin-bottom: 10px; margin-top: 30px;
+}
 /* custom scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
@@ -235,10 +243,30 @@ a:hover {
   .manilaBlockTwo p, .manilaBlockTwo ul li{
     font-size: 20px;
   }
-  .projectBar div p {
+  .bar {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .projectBar {
+    height: 80vh;
+    max-width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projectBar div {
+    min-width: 0;
+    max-width: 232px;
+    max-height: 178px;
+  }
+  .projectBar div a {
     font-size: 17px;
+    margin-top: 15px;
+  }
+  .projectBar div p {
+    font-size: 14px;
     padding: 20px;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .manilaBlockThree {
     height: 305px;
@@ -247,11 +275,95 @@ a:hover {
   .manilaBlockThree p, .manilaBlockThree ul, .manilaBlockThree li {
     font-size: 20px;
   }
-  #backArrow1, #backArrow2 {
-    transform: translate(-13vw, 100px);
+  #backArrow1, #backArrow2, #nextArrow1, #nextArrow2 {
+    display: none;
   }
-  #nextArrow1, #nextArrow2 {
-    transform: translate(62vw, 100px);
+  #artText, #artBar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px), (max-width: 770px) {
+  .bar, .projectBar {
+    height: 100vh;
+  }
+  .manilaBlock {
+    height: 66px;
+    width: 325px;
+  }
+  #manilaBlockDiv {
+    padding-top: 7px;
+  }
+  .manilaBlockTwo {
+    height: 253px;
+    width: 360px;
+  }
+  .manilaBlockTwo p, .manilaBlockTwo ul li {
+    font-size: 15px;
+    margin-top: 7px;
+  }
+  .projectBar div {
+    min-width: 0;
+    max-width: 184px;
+    max-height: 148px;
+  }
+  .projectBar div a {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .projectBar div p {
+    font-size: 12px;
+    padding: 10px;
+    padding-top: 2px;
+  }
+  .manilaBlockThree {
+    height: 260px;
+    width: 369px;
+  }
+  .manilaBlockThree ul li {
+    font-size: 17px;
+  }
+  .manilaBlockThree p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  * {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 515px) {
+  .bar, .projectBar {
+    height: 125vh;
+  }
+  .projectBar div {
+    min-width: 0;
+    max-width: 174px;
+    max-height: 133px;
+  }
+  .projectBar div p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .manilaBlockTwo {
+    height: 211px;
+    width: 300px;
+  }
+  .manilaBlockTwo p, .manilaBlockTwo ul li {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .manilaBlockThree {
+    height: 239px;
+    width: 339px;
+  }
+  .manilaBlockThree p {
+    font-size: 17px;
+  }
+  * {
+    font-size: 18px;
   }
 }
 
