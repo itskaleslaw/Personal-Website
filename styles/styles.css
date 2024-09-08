@@ -3,9 +3,12 @@
   font-size: 25px;
   scroll-snap-type: y mandatory;
 }
-img {
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
+.background {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
 }
 body {
   margin: 0;
@@ -20,13 +23,7 @@ body {
   padding: 10px;
 }
 /* first page */
-.art {
-  width: 100%;
-  height: 400%;
-  background-repeat: no-repeat;
-  background-image: url(../images/background.png);
-  background-size: cover;
-}
+
 .hello {
   font-family: "Jersey 15";
   font-size: 90px;
