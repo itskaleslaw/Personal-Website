@@ -10,6 +10,9 @@
   image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
 }
+img {
+  image-rendering: auto;
+}
 body {
   margin: 0;
   padding: 0;
@@ -86,7 +89,7 @@ a:hover {
 }
 /* page three */
 .section {
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
